@@ -5,7 +5,6 @@ public class Author {
     private String name;
     private String surname;
 
-
     //Добавил небольшую проверку имени и фамилии автора,
     // т.к. объекты этого класса используются при создании объектов класса Book
     public Author(String name, String surname) {
@@ -18,14 +17,11 @@ public class Author {
             System.out.println("Автор: имя - " + name + ", фамилия - " + surname + " - не добавлен");
             System.out.println("Пожалуйста, укажите имя/фамилию автора!");
             System.out.println("");
-
-
         } else {
             this.name = name;
             this.surname = surname;
             System.out.println("Добавлен автор - " + name + " " + surname);
         }
-
     }
 
     public String getName() {
